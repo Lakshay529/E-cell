@@ -15,15 +15,40 @@ header{
 button{
     background-color: rgb(255, 69, 0);
 }
-input{
+input, textarea{
     width:300px;
 }
 .form{
+    /* justify-content: center;
+    display:flexbox; */
+    margin: 0 auto;
     width: 380px;
     padding: 40px;
     padding-bottom: 50px;
     border: 2px solid black;
 }
 h2{
+    text-align: center;
+    text-decoration: underline;
     font-weight: bold;
+}
+#register{
+    text-align: center;
+}
+footer{
+    padding: 32px 0px 64px 0px;
+    background-color: black;
+}
+img{
+    width: 220px;
+    height: 93.84px;
+}
+.success-box {
+    display: none;
+}
+.startup-card{
+    display: inline-block;
+    border: 2px solid black;
+    margin: 5px;
+    width: 150px;
 }
