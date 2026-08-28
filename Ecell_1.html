@@ -4,35 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-cell startup pitch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
     <header>
-        <div>
+        <div id="logo">
             E-cell UIET
         </div>
     </header>
+    <div id="main">
+    <h1>
+        Welcome to Enterpreneurship Cell
+    </h1>
+    <p>Buid, launch, and grow your startup in UIET Kurukshetra</p>
+    </div>
+    <h2 >Startup Pitch Competition</h2>
     <form action="url" method="get" class="form">
+        
         <div class="fname">
             <label for="name">Full name:</label>
+            <br>
             <input type="text" id="name" placeholder="Full name" />
+            <p class="error" id="name-error"></p>
         </div>
         <div class="femail">
-            <label for="email">Full name:</label>
+            <label for="email">Email address:</label>
+            <br>
             <input type="text" id="email" placeholder="abc@gmail.com" />
+            <p class="error" id="email-error"></p>
         </div>
         <div class="fnumber">
-            <label for="number">Full name:</label>
+            <label for="number">Mobile Number:</label>
+            <br>
             <input type="text" id="number" placeholder="+91xxxxxxxxxx" />
+            <p class="error" id="number-error"></p>
         </div>
         <div class="fteam">
-            <label for="team">Full name:</label>
+            <label for="team">Team name:</label>
+            <br>
             <input type="text" id="team" placeholder="Team name" />
+            <p class="error" id="team-error"></p>
         </div>
         <div class="fidea">
-            <label for="idea">Full name:</label>
+            <label for="idea">Idea:</label>
+            <br>
             <input type="text" id="idea" placeholder="Idea" />
+            <p class="error" id="idea-error"></p>
         </div>
-        <button>Submit</button>
-    </form>
-</head>
+        <button type="submit">Submit Details</button>
+        </form>
+        <div id="success">
+            <p>Your details are submitted succesfully.</p>
+        </div>
+    
 <body>
     
 </body>
