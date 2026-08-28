@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-cell startup pitch</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div id="logo">
@@ -13,18 +15,17 @@
         </div>
     </header>
     <div id="main">
-    <h1>
-        Welcome to Enterpreneurship Cell
-    </h1>
-    <p>Buid, launch, and grow your startup in UIET Kurukshetra</p>
+        <h1>
+            Welcome to Enterpreneurship Cell
+        </h1>
+        <p>Buid, launch, and grow your startup in UIET Kurukshetra</p>
     </div>
-    <!-- <h2 >Startup Pitch Competition</h2> -->
     <div id="register" class="section">
-    <h2>Startup Pitch Competition</h2>
-    <p>Enter your details below to pitch your idea to investors.</p>
+        <h2>Startup Pitch Competition</h2>
+        <p>Enter your details below to pitch your idea to investors.</p>
     </div>
     <form id="form" class="form" onsubmit="validateForm(event)">
-        
+
         <div class="fname">
             <label for="name">Full name:</label>
             <br>
@@ -40,8 +41,8 @@
         <div class="fphone">
             <label for="phone">Mobile Number:</label>
             <br>
-            <input type="text" id="phone" placeholder="+91xxxxxxxxxx" />
-            <p class="error" id="number-error"></p>
+            <input type="text" id="phone" placeholder="10-digit mobile number" />
+            <p class="error" id="phone-error"></p>
         </div>
         <div class="fteam">
             <label for="team">Team name:</label>
@@ -55,44 +56,60 @@
             <textarea id="idea" rows="4" placeholder="Describe your startup idea..."></textarea>
             <p class="error" id="idea-error"></p>
         </div>
-        <button type="submit">Submit Details</button>
+        <button type="submit" id="submit">Submit Details</button>
     </form>
-        <div id="success" class="success-box">
-            <h3>Registration Successful</h3>
-            <p>Your details are submitted succesfully.</p>
-        </div>
-        <div id="startups" class="section gray-bg">
-    <h2>Our Startups</h2>
-    <p>Search for UIET startups below:</p>
-    
-    <input type="text" id="search-box" placeholder="Search startups..." onkeyup="searchStartups()">
-
-    <div class="startup-list">
-      <div class="startup-card">
-        <h3>StudyMate</h3>
-        <p><strong>Category:</strong> EdTech</p>
-        <p>A platform for UIET students to share notes and previous year papers.</p>
-        <a href="#">Visit Website</a>
-      </div>
-
-      <div class="startup-card">
-        <h3>CampusRide</h3>
-        <p><strong>Category:</strong> EV</p>
-        <p>Electric bicycle sharing system for Kurukshetra University campus.</p>
-        <a href="#">Visit Website</a>
-      </div>
-
-      <div class="startup-card">
-        <h3>MessPay</h3>
-        <p><strong>Category:</strong> FinTech</p>
-        <p>An app to manage hostel mess bills and daily expenses easily.</p>
-        <a href="#">Visit Website</a>
-      </div>
+    <div id="success" class="success-box">
+        <h3>Registration Successful</h3>
+        <p>Your details are submitted successfully.</p>
     </div>
-  </div>
-        <footer>
-            <img src="https://ecelluietkuk.vercel.app/_next/image?url=%2Flogo.png&w=640&q=75" alt="Image" srcset="">
-        </footer>
-        <script src="script.js"></script>
+    <div id="startups" class="section gray-bg">
+        <h2>Our Startups</h2>
+        <p>Search for UIET startups below:</p>
+
+        <input type="text" id="search-box" placeholder="Search startups..." onkeyup="searchStartups()">
+
+        <div class="startup-list">
+            <div class="startup-card cat-edtech">
+                <h3>StudyMate</h3>
+                <p><strong>Category:</strong> EdTech</p>
+                <p>A platform for UIET students to share notes and previous year papers.</p>
+                <a href="#">Visit Website</a>
+            </div>
+
+            <div class="startup-card cat-ev">
+                <h3>CampusRide</h3>
+                <p><strong>Category:</strong> EV</p>
+                <p>Electric bicycle sharing system for Kurukshetra University campus.</p>
+                <a href="#">Visit Website</a>
+            </div>
+
+            <div class="startup-card cat-fintech">
+                <h3>MessPay</h3>
+                <p><strong>Category:</strong> FinTech</p>
+                <p>An app to manage hostel mess bills and daily expenses easily.</p>
+                <br>
+                <a href="#">Visit Website</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img src="https://ecelluietkuk.vercel.app/_next/image?url=%2Flogo.png&w=640&q=75" alt="E-cell UIET logo">
+        <div class="details">
+            <p>Entrepreneurship cell, UIET Kurukshetra</p>
+            <p>Contact: &#x2709;ecell@uietkuk.ac.in</p>
+            <p>&copy; 2026 E-Cell UIET Kurukshetra</p>
+            <address> &#128204;E-cell, UIET Kurukshetra, Kurukshetra University</address>
+        </div>
+        <div class="Follow">
+            <h3 >Follow us</h3>
+            <a href="https://www.instagram.com/ecell_uietkuk/" >Instagram Handle</a>
+            <a href="https://www.linkedin.com/company/ecelluietkuk/">Linkedin</a>
+            <a href="https://www.facebook.com/ecelluietku">Facebook</a>
+            <a href="https://twitter.com/ecell_uietkuk" style="font-weight: bold;">X</a>
+        </div>
+        
+    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>

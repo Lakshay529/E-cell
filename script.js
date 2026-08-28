@@ -2,7 +2,7 @@ function validateForm(event) {
 
   event.preventDefault();
 
-  let name = document.getElementById("name").value;
+  let name = document.getElementById("name").value.trim();
   let email = document.getElementById("email").value;
   let phone = document.getElementById("phone").value;
   let team = document.getElementById("team").value;
@@ -21,12 +21,12 @@ function validateForm(event) {
     hasError = true;
   }
 
-  if (email.includes("@") == false) {
-    document.getElementById("email-error").innerHTML = "Please enter a valid email with @";
+  if (email.includes("@") == false || email.includes(".") == false) {
+    document.getElementById("email-error").innerHTML = "Please enter a valid email address";
     hasError = true;
   }
 
-  if (phone.length != 10) {
+  if (phone.length != 10 || isNaN(phone)) {
     document.getElementById("phone-error").innerHTML = "Phone number must be exactly 10 digits";
     hasError = true;
   }
