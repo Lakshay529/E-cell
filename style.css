@@ -1,5 +1,7 @@
 body{
     background-color: rgb(252, 252, 253);
+    background-image: radial-gradient(rgb(225, 225, 230) 1.5px, transparent 1.5px);
+    background-size: 22px 22px;
 }
 
 header {
@@ -134,6 +136,7 @@ img{
 }
 .startup-card:hover{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+    transform: translateY(-4px);
 }
 .cat-edtech{
     border-top-color: rgb(37, 99, 235); 
